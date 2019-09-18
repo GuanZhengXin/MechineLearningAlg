@@ -111,11 +111,18 @@ import numpy as np
 # res = sum(x>2)
 # res = np.count_nonzero(x)
 
-arr = np.arange(16).reshape(4,-1)
-x = arr[arr[:,3] % 3==0,3]
-y = arr[:,0]
-print(x)
-print(y)
+# arr = np.arange(16).reshape(4,-1)
+# x = arr[arr[:,3] % 3==0,3]
+# y = arr[:,0]
+# print(x)
+# print(y)
+
+distance = np.array([1.2,4,0.8,1.1,5.2,2,0.1])
+min = np.argsort(distance)
+max = np.argsort(-distance)
+print(min)
+print(max)
+#print(distance)
 
 
 

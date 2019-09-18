@@ -35,22 +35,22 @@ class KNNClassifier():
     def __repr__(self):
         return 'KNN(K=%d)' % self.K
 
-# #实现自己的KNNClassifier算法
-# x = ([[3.3935,2.3312],
-#      [3.1100,1.7815],
-#      [1.3438,3.3683],
-#      [3.5822,4.6791],
-#      [2.2803,2.8669],
-#      [7.4234,4.6965],
-#      [5.7450,3.5339],
-#      [9.1721,2.5110],
-#      [7.7927,3.4240],
-#      [7.9398,0.7916]])
-# y = ([0,0,0,0,0,1,1,1,1,1])
-# X_train = np.array(x)
-# Y_train = np.array(y)
-# new_sample = np.array([[3.4537,6.8845],[5.0936,3.3657]])
-# knn = KNNClassifier(K=4)
-# knn.fit(X_train,Y_train)
-# result = knn.predict(new_sample)
-# print(result)
+#实现自己的KNNClassifier算法
+x = ([[3.3935,2.3312],
+     [3.1100,1.7815],
+     [1.3438,3.3683],
+     [3.5822,4.6791],
+     [2.2803,2.8669],
+     [7.4234,4.6965],
+     [5.7450,3.5339],
+     [9.1721,2.5110],
+     [7.7927,3.4240],
+     [7.9398,0.7916]])
+y = ([0,0,0,0,0,1,1,1,1,1])
+X_train = np.array(x)
+Y_train = np.array(y)
+new_sample = np.array([[3.4537,6.8845],[5.0936,3.3657]])
+knn = KNNClassifier(K=4)
+knn.fit(X_train,Y_train)
+result = knn.predict(new_sample)
+print(result)
